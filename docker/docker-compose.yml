@@ -1,0 +1,30 @@
+version: '3'
+services:
+  eureka:
+    build: ../demo/eureka
+    ports:
+      - "8761:8761"
+  customer:
+    build: ../demo/customer
+    links:
+     - eureka
+  events:
+    build: ../demo/events
+    links:
+     - eureka
+  order:
+    build: ../demo/order
+    links:
+     - eureka
+  zuul:
+    build: ../demo/zuul
+    links:
+     - eureka
+    ports:
+      - "8080:8080"
+  turbine:
+    build: ../demo/turbine
+    links:
+     - eureka
+    ports:
+      - "8989:8989"

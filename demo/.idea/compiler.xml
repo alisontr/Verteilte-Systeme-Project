@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zuul" />
+        <module name="turbine" />
+        <module name="customer" />
+        <module name="order" />
+        <module name="eureka" />
+        <module name="events" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="customer" target="8" />
+      <module name="demo" target="10" />
+      <module name="eureka" target="10" />
+      <module name="events" target="10" />
+      <module name="order" target="10" />
+      <module name="tickets" target="10" />
+      <module name="turbine" target="10" />
+      <module name="zuul" target="10" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="customer" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="events" options="-parameters" />
+      <module name="order" options="-parameters" />
+      <module name="tickets" options="-parameters" />
+      <module name="turbine" options="-parameters" />
+      <module name="zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

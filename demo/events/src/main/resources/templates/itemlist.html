@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	>
+<head>
+	<title>Events</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body align="center">
+<h1 id="header"align="center">Events</h1>
+<div id="content" class="container">
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<td>id</td>
+					<td>Name</td>
+					<td>Price</td>
+					<td></td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:if="${items.empty}">
+					<td colspan="4">No items</td>
+				</tr>
+				<tr th:each="event : ${items}">
+					<td><a href="1.html" th:href="${event.id+'.html'}"
+						th:text="${event.id}">1</a></td>
+					<td th:text="${event.name}">Name</td>
+					<td th:text="${event.price}">42.0</td>
+					<td><form th:action="${event.id+'.html'}"
+							th:method="delete">
+							<input type="submit" value="delete" class="btn btn-link" />
+						</form></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="row">
+			<div class="col-md-4">
+				<a href="form.html">Add Event</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
