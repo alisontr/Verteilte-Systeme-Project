@@ -1,21 +1,21 @@
 # VS-PROJECT-FINAL
 
-## BEFORE SETUP
+## Before Setup
 -setup project sdk Java 11
 -4GB RAM Einstellung in Docker unter Preferences/Advanced
 
-## CHECK IF RUNNING
+## Check
 Alisons:demo alison$ ./mvnw clean package
 
-## BUILD IMAGES AND CHECK
+## Build images and check
 Alisons:demo alison$ cd ../docker
 Alisons:docker alison$ docker-compose build
 Alisons:docker alison$ docker images
 
-## BUILD AND VIEW CONTAINER
+## Build and view Container
 Alisons:docker alison$ docker-compose up -d
 Alisons:docker alison$ docker ps
 
-## ACCESS
+## Access 
 Silvester Events - Anwendung , durch Zuul : http://localhost:8080/
 Eureka: http://localhost:8761/
