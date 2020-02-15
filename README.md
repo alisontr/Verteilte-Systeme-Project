@@ -4,7 +4,7 @@
 -setup project sdk Java 11
 -4GB RAM Einstellung in Docker unter Preferences/Advanced
 
-##CHECK IF RUNNING
+## CHECK IF RUNNING
 Alisons:demo alison$ ./mvnw clean package
 
 ## BUILD IMAGES AND CHECK
@@ -16,6 +16,6 @@ Alisons:docker alison$ docker images
 Alisons:docker alison$ docker-compose up -d
 Alisons:docker alison$ docker ps
 
-##ACCESS
+## ACCESS
 Silvester Events - Anwendung , durch Zuul : http://localhost:8080/
 Eureka: http://localhost:8761/
