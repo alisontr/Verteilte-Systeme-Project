@@ -8,7 +8,7 @@
 Alisons:demo alison$ ./mvnw clean package
 
 ## Build images and check
-Alisons:demo alison$ cd ../docker
+Alisons:demo alison$ cd ../docker \n
 Alisons:docker alison$ docker-compose build
 Alisons:docker alison$ docker images
 
