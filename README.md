@@ -21,7 +21,7 @@
 * Eureka: http://localhost:8761/
 
 ## Explanatory note
-* If white-label error occurs, refresh the page and wait a few seconds
+* If WhiteLabel error occurs, refresh the page and wait a few seconds
 
 ## Idea
 * You can put your name on the guestlist for the Silvester event when you click on microservice event
