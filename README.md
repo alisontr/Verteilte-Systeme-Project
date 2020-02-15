@@ -19,3 +19,6 @@
 ## Access 
 * Silvester Events-Project, durch Zuul : http://localhost:8080/
 * Eureka: http://localhost:8761/
+
+
+Isabel Kaupp, Leonie Dannemann, Alison Trettin
